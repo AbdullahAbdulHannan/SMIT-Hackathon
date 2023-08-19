@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main {
+            box-shadow: -5px 10px 5px -5px rgba(0,0,0,0.37);
+           -webkit-box-shadow: -5px 10px 5px -5px rgba(0,0,0,0.37);
+           -moz-box-shadow: -5px 10px 5px -5px rgba(0,0,0,0.37);
+            width: 40%;
+            margin: 7% 0 2% 15%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        img {
+            width: 50%;
+            height: 250px;
+            border: 2px solid black;
+            border-radius: 2px;
+            margin: 4%;
+        }
+.inpContainer{
+    margin: 5%;
+    padding: 2%;
+}
+        input {
+            display: block;
+            width: 50%;
+            height: 35px;
+            outline: none;
+            border: 2px solid rgb(232, 231, 231);
+            border-radius: 5px;
+        }
+
+        input:focus {
+            border-color: rgb(116, 65, 255);
+            box-shadow: 0 0 0 0.25rem rgba(116, 65, 255, 0.25);
+        }
+        .name,.passwordHeading{
+            margin-left: 8%;
+        }
+        .btn{
+            margin: 0 0 3% 3%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="signupNav">
+        <h3 class="navHeading">Personal Blogging App</h3>
+        <a  class="navLink" id="logout" style="margin-right: 5%; cursor: pointer;">Logout</a>
+    </nav>
+    <div class="heading">
+        <h1>Profile</h1>
+    </div>
+    <div class="main">
+    <div class="image-container">
+        <img src="../istockphoto-1128008922-612x612.jpg" alt="">
+        <svg class="pen-icon" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M19.9,6.48L17.52,4.1l2.4-2.4a1.49,1.49,0,0,0,0-2.1h0a1.48,1.48,0,0,0-2.09,0L15.43,2.01a1.46,1.46,0,0,0-.43,1v0L3,17.76l-2,7,6-2L20,5.9a1.51,1.51,0,0,0-.1-.42ZM5.78,20.3,4.07,18.59l12-12,1.71,1.71ZM16.57,6.14,5.41,17.3l-1.71-1.71L14.86,4.43ZM3.52,19.44,2.11,17l1.17-3.9L7.89,16.17ZM18.09,5.87,6.91,17.06,4.93,15.08,16.11,3.89Z"></path>
+        </svg>
+    </div>
+        <h1 class="name">Abdullah</h1>
+        <h3 class="passwordHeading">Password</h3>
+   
+        <div class="inpContainer">
+
+            <input type="password" class="form-control" placeholder="Old Password"><br>
+            <input type="password" class="form-control" placeholder="New Password"><br>
+            <input type="password" class="form-control" placeholder="Repeat Password"><br>
+        </div>
+        <button type="submit" class="btn" style="background-color: blueviolet; color: white;" id="updateProfile">Update Password</button>
+    </div>
+</div>
+</body>
+<script type="module" src="../js/profile.js"></script>
+</html>

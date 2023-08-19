@@ -1,0 +1,42 @@
+body{
+      background-color: aliceblue;
+    }
+    .wc {
+      width: 30%;
+      height: 30%;
+    }
+    .m1 {
+      margin-top: 50px;
+    }
+    .signupNav{
+      background-color: rgb(116, 65, 255);
+      color: white;
+      padding-left:7%;
+      padding-top:0.3%;
+      padding-bottom:0.4%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .navHeading{
+      font-weight: bold;
+      font-size: 22px;
+    }
+    .navLink{
+      color: white;
+      text-decoration: none;
+      position: right;
+      margin-right: 18%;
+    }
+    .form-control:focus {
+      border-color: rgb(116, 65, 255); 
+      box-shadow: 0 0 0 0.25rem rgba(116, 65, 255, 0.25); 
+    }
+    .heading{
+      padding: 2%;
+      background-color: white;
+      border-bottom: 0.5px dotted rgb(212, 212, 212);
+      font-weight: bolder;
+    }
+    input{
+      width:10%
+    }
